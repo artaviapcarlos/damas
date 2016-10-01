@@ -24,9 +24,9 @@ public:
 template <class T>
 Nodo<T>::Nodo(T* dato,Nodo<T> *ant,Nodo<T>*sig)
 {
-	this->siguiente=sig;
-	this->elemento=dato;
-	this->anterior= ant;
+	this->siguiente = sig;
+	this->elemento = dato;
+	this->anterior = ant;
 }
 
 template <class T>

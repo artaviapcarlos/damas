@@ -10,13 +10,10 @@ Integer* ListaOrdenable::locate(int x){
 	while(tmp){
 		if(tmp->getElemento()->getValor()== x){
 			return tmp->getElemento();
-		
 		}
 		else{
 			tmp= tmp->getSiguiente();
-		
 		}
-	
 	}
 
 	return NULL;

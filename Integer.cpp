@@ -13,27 +13,27 @@ Integer::~Integer(void)
 }
 
 string Integer::toString(){
-stringstream s;
-if(!esMarcado()){
-	s<<"["<<valor<<"]";}
-else{
-	s<<"[X]";
-}
-return s.str();
+	stringstream s;
+	if(!esMarcado()){
+		s<<"["<<valor<<"]";}
+	else{
+		s<<"[X]";
+	}
+	return s.str();
 }
 
 int Integer::getValor(){
-return valor;
+	return valor;
 }
 
 bool Integer::esMarcado(){
-return marcado;
+	return marcado;
 }
 
 void Integer::marcar(){
-marcado= true;
+	marcado= true;
 }
 
 void Integer::desMarcar(){
-marcado= false;
+	marcado= false;
 }

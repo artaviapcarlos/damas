@@ -2,7 +2,6 @@
 #include"ListaOrdenable.h"
 #include"Integer.h"
 #include<time.h>
-#include<Windows.h>
 
 #pragma once
 class Tablero
