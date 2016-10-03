@@ -8,7 +8,7 @@ ListaOrdenable::ListaOrdenable(void):LinkedList<Integer>()
 Integer* ListaOrdenable::locate(int x){
 	Nodo<Integer>* tmp= root;
 	while(tmp){
-		if(tmp->getElemento()->getValor()== x){
+		if(tmp->getElemento()->getValor() == x){
 			return tmp->getElemento();
 		}
 		else{
@@ -19,17 +19,15 @@ Integer* ListaOrdenable::locate(int x){
 	return NULL;
 }
 void  ListaOrdenable::marcar(int x){
-	Nodo<Integer>* tmp= root;
+	Nodo<Integer>* tmp = root;
 	while(tmp){
 		if(tmp->getElemento()->getValor()== x){
 			tmp->getElemento()->marcar();
-		    break;
+		    return;
 		}
-		else{
+		else
 			tmp= tmp->getSiguiente();
-		
-		}
-	
+
 	}
 }
 

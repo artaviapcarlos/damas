@@ -7,9 +7,14 @@ template <class T>
 class Nodo
 {
 protected:
-	Nodo<T> *siguiente;
 	T *elemento;
+	Nodo<T>* siguiente;
 	Nodo<T>* anterior;
+	Nodo<T>* upLeft;
+	Nodo<T>* upRight;
+	Nodo<T>* downLeft;
+	Nodo<T>* downRight;
+	string id;
 public:
 	Nodo(T*,Nodo<T> *s = NULL,Nodo<T> *p = NULL);
 	virtual Nodo<T> *getSiguiente()const;
@@ -17,7 +22,6 @@ public:
 	virtual T *getElemento()const;
 	virtual void setSiguiente(Nodo<T>*);
 	virtual void setAnterior(Nodo<T>*);
-	virtual void setDato(T*);
 	virtual ~Nodo();
 };
 
