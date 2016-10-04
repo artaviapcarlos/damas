@@ -3,11 +3,12 @@
 #include "Integer.h"
 #include "Ficha.h"
 
-class ListaOrdenable: public LinkedList<Integer> {
+class ListaOrdenable: public LinkedList<Ficha> {
 public:
 	ListaOrdenable(void);
-	Integer* locate(int);
+	Ficha* locate(int);
 	void marcar(int);
-	void addOrdenado(Integer *e);
+	void addOrdenado(Ficha *e);
+	Ficha* operator [] (const int index);
 };
 

@@ -1,14 +1,14 @@
 #include "ListaOrdenable.h"
 
 
-ListaOrdenable::ListaOrdenable(void):LinkedList<Integer>()
+ListaOrdenable::ListaOrdenable(void):LinkedList<Ficha>()
 {
 }
 
-Integer* ListaOrdenable::locate(int x){
-	Nodo<Integer>* tmp= root;
+Ficha* ListaOrdenable::locate(int x){
+	Nodo<Ficha>* tmp= root;
 	while(tmp){
-		if(tmp->getElemento()->getValor() == x){
+		if(tmp->getElemento()->getNum() == x){
 			return tmp->getElemento();
 		}
 		else{
@@ -19,10 +19,10 @@ Integer* ListaOrdenable::locate(int x){
 	return NULL;
 }
 void  ListaOrdenable::marcar(int x){
-	Nodo<Integer>* tmp = root;
+	Nodo<Ficha>* tmp = root;
 	while(tmp){
-		if(tmp->getElemento()->getValor()== x){
-			tmp->getElemento()->marcar();
+		if(tmp->getElemento()->getNum()== x){
+			tmp->getElemento()->coronar();
 		    return;
 		}
 		else
@@ -31,41 +31,40 @@ void  ListaOrdenable::marcar(int x){
 	}
 }
 
-void ListaOrdenable::addOrdenado(Integer* e){
-	Nodo<Integer> *nuevo = new Nodo<Integer>(e,NULL,NULL);
+void ListaOrdenable::addOrdenado(Ficha* e){
+	Nodo<Ficha> *nuevo = new Nodo<Ficha>(e,NULL,NULL);
 	if(esVacia()){
 	root= nuevo;
 	last= root;
 	}
 	else{
-		if(root->getElemento()->getValor()>nuevo->getElemento()->getValor()){
+		if(root->getElemento()->getNum()>nuevo->getElemento()->getNum()){
 			nuevo->setSiguiente(root);
 			root->setAnterior(nuevo);
 			root= nuevo;
 		}
 		else{
-		 Nodo<Integer> *tmp= root;
-		 while(e->getValor()>= tmp->getElemento()->getValor()&&tmp->getSiguiente()){
+		 Nodo<Ficha> *tmp= root;
+		 while(e->getNum()>= tmp->getElemento()->getNum()&&tmp->getSiguiente()){
 			 tmp= tmp->getSiguiente();
 		 }
-		 if(e->getValor()>= tmp->getElemento()->getValor()){
+		 if(e->getNum()>= tmp->getElemento()->getNum()){
 			 tmp->setSiguiente(nuevo);
 			 nuevo->setAnterior(tmp);
 		     last= nuevo;
 		 }
 		 else{
-			 Nodo<Integer> *tmp2= tmp->getAnterior();
+			 Nodo<Ficha> *tmp2= tmp->getAnterior();
 			 tmp->setAnterior(nuevo);
 			 nuevo->setSiguiente(tmp);
 			 tmp2->setSiguiente(nuevo);
 			 nuevo->setAnterior( tmp2);
 		 }
-		
-		
 		}
-	
 	}
+}
 
-
+Ficha* ListaOrdenable::operator[](const int index) {
+	return locate(index);
 }
 

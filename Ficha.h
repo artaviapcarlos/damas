@@ -20,6 +20,8 @@ public:
     Ficha(int,int);
     int getColor() const;
     void coronar();
+    int getNum();
+    void setNum(int);
     string toString();
 };
 

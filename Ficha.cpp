@@ -14,6 +14,14 @@ void Ficha::coronar() {
     corona = true;
 }
 
+int Ficha::getNum() {
+    return num;
+}
+
+void Ficha::setNum(int num) {
+    this->num = num;
+}
+
 string Ficha::toString() {
     stringstream s;
 

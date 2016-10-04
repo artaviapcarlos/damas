@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/LinkedList.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Integer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Ficha.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/README.md" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Integer.cpp" isTestSource="false" />

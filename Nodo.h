@@ -14,7 +14,7 @@ protected:
 	Nodo<T>* upRight;
 	Nodo<T>* downLeft;
 	Nodo<T>* downRight;
-	string id;
+	int col;
 
 public:
 	Nodo(T*,Nodo<T> *s = NULL,Nodo<T> *p = NULL);
@@ -51,7 +51,6 @@ void Nodo<T>::setSiguiente(Nodo<T>* n){
 template <class T>
 void Nodo<T>::setAnterior(Nodo<T>* n){
 	anterior = n;
-
 }
 
 template <class T>
@@ -74,42 +73,42 @@ T *Nodo<T>::getElemento()const
 }
 
 template <class T>
-Nodo* Nodo::getUpLeft() const {
+Nodo<T>* Nodo<T>::getUpLeft() const {
 	return upLeft;
 }
 
 template <class T>
-void Nodo::setUpLeft(Nodo *upLeft) {
+void Nodo<T>::setUpLeft(Nodo<T> *upLeft) {
 	this->upLeft = upLeft;
 }
 
 template <class T>
-Nodo* Nodo::getUpRight() const {
+Nodo<T>* Nodo<T>::getUpRight() const {
 	return upRight;
 }
 
 template <class T>
-void Nodo::setUpRight(Nodo *upRight) {
+void Nodo<T>::setUpRight(Nodo<T> *upRight) {
 	this->upRight = upRight;
 }
 
 template <class T>
-Nodo *Nodo::getDownLeft() const {
+Nodo<T>* Nodo<T>::getDownLeft() const {
 	return downLeft;
 }
 
 template <class T>
-void Nodo::setDownLeft(Nodo *downLeft) {
+void Nodo<T>::setDownLeft(Nodo<T> *downLeft) {
 	this->downLeft = downLeft;
 }
 
 template <class T>
-Nodo *Nodo::getDownRight() const {
+Nodo<T> *Nodo<T>::getDownRight() const {
 	return downRight;
 }
 
 template <class T>
-void Nodo::setDownRight(Nodo *downRight) {
+void Nodo<T>::setDownRight(Nodo<T> *downRight) {
 	this->downRight = downRight;
 }
 
