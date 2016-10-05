@@ -114,10 +114,10 @@ template <class T>
 	while(actual)
 	{
 		T *obj=actual->getElemento();
-		  s<<obj->toString();
+		  s << "| " << obj->toString();
 		actual=actual->getSiguiente();
 	}
-	s<<endl;
+	s << " |" << endl;
 	return s.str();
 }
 

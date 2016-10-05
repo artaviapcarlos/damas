@@ -1,8 +1,7 @@
 #include "ListaOrdenable.h"
 
 
-ListaOrdenable::ListaOrdenable(void):LinkedList<Ficha>()
-{
+ListaOrdenable::ListaOrdenable(void):LinkedList<Ficha>() {
 }
 
 Ficha* ListaOrdenable::locate(int x){
@@ -63,6 +62,25 @@ void ListaOrdenable::addOrdenado(Ficha* e){
 		}
 	}
 }
+
+void ListaOrdenable::swapNodo(int index, Ficha* ficha) {
+	int color = locate(index)->getColor();
+	bool corona = locate(index)->getCorona();
+	int num = locate(index)->getNum();
+
+	locate(index)->setColor(ficha->getColor());
+	locate(index)->setCorona(ficha->getCorona());
+	locate(index)->setNum(ficha->getNum());
+
+	ficha->setColor(color);
+	ficha->setCorona(color);
+	ficha->setNum(num);
+}
+
+void ListaOrdenable::moveUpLeft(int ) {
+
+}
+
 
 Ficha* ListaOrdenable::operator[](const int index) {
 	return locate(index);

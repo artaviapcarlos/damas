@@ -10,6 +10,18 @@ int Ficha::getColor() const {
     return color;
 }
 
+void Ficha::setColor(int color) {
+    this->color = color;
+}
+
+bool Ficha::getCorona() const {
+    return corona;
+}
+
+void Ficha::setCorona(bool corona) {
+    this->corona = corona;
+}
+
 void Ficha::coronar() {
     corona = true;
 }
@@ -25,9 +37,11 @@ void Ficha::setNum(int num) {
 string Ficha::toString() {
     stringstream s;
 
-    if(color)
+    if(color == 2)
+        s << "X" << endl;
+    if(color == 1)
         s << "N" << num;
-    else
+    if(color == 0)
         s << "B" << num;
 
     if(corona)

@@ -19,6 +19,9 @@ public:
 
     Ficha(int,int);
     int getColor() const;
+    void setColor(int);
+    bool getCorona() const;
+    void setCorona(bool);
     void coronar();
     int getNum();
     void setNum(int);

@@ -27,10 +27,10 @@ public:
 	virtual Nodo* getUpRight() const;
 	virtual Nodo* getDownLeft() const;
 	virtual Nodo* getDownRight() const;
-	virtual void setUpLeft(Nodo*);
-	virtual void setUpRight(Nodo*);
-	virtual void setDownLeft(Nodo*);
-	virtual void setDownRight(Nodo*);
+	virtual void setUpLeft(Nodo<T>*);
+	virtual void setUpRight(Nodo<T>*);
+	virtual void setDownLeft(Nodo<T>*);
+	virtual void setDownRight(Nodo<T>*);
 	virtual ~Nodo();
 };
 
@@ -45,7 +45,6 @@ Nodo<T>::Nodo(T* dato,Nodo<T> *ant,Nodo<T>*sig)
 template <class T>
 void Nodo<T>::setSiguiente(Nodo<T>* n){
 	siguiente = n;
-
 }
 
 template <class T>

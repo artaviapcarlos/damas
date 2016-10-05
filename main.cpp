@@ -18,7 +18,31 @@ int main(){
         listaNegras->addLast(new Ficha(1,i));
 
 
-    cout << "Jello" << endl;
+    cout << "Negras" << endl;
     cout << listaNegras->toString() << endl;
+
+    cout << "\n Blancas" << endl;
+    cout << listaBlancas->toString() << endl;
+
+    listaNegras->operator[](3)->coronar();
+    listaNegras->operator[](1)->coronar();
+
+    cout << "corona" << endl;
+    cout << listaNegras->toString() << endl;
+
+    /*cout << "\n Prueba de intercambio b c/ b" << endl;
+    listaBlancas->swapNodo(0,listaBlancas->locate(3));*/
+
+    cout << listaBlancas->toString() << endl;
+
+    cout << "\n Prueba de intercambio b c/ n" << endl;
+    listaBlancas->swapNodo(0,listaNegras->locate(3));
+
+    cout << "\nBlancas" << endl;
+    cout << listaBlancas->toString() << endl;
+
+    cout << "\n Negras" << endl;
+    cout << listaNegras->toString() << endl;
+
     return 0;
 }
