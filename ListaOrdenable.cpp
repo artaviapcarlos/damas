@@ -26,14 +26,13 @@ void  ListaOrdenable::marcar(int x){
 		}
 		else
 			tmp= tmp->getSiguiente();
-
 	}
 }
 
 void ListaOrdenable::addOrdenado(Ficha* e){
 	Nodo<Ficha> *nuevo = new Nodo<Ficha>(e,NULL,NULL);
 	if(esVacia()){
-	root= nuevo;
+	root = nuevo;
 	last= root;
 	}
 	else{
@@ -73,12 +72,46 @@ void ListaOrdenable::swapNodo(int index, Ficha* ficha) {
 	locate(index)->setNum(ficha->getNum());
 
 	ficha->setColor(color);
-	ficha->setCorona(color);
+	ficha->setCorona(corona);
 	ficha->setNum(num);
 }
 
-void ListaOrdenable::moveUpLeft(int ) {
+Nodo<Ficha>* ListaOrdenable::getNode(int index) {
+	Nodo<Ficha>* tmp = root;
+	int k = 0;
+	while(tmp!=NULL){
+		if(k == index){
+			return tmp;
+		}
+		else{
+			tmp = tmp->getSiguiente();
+			k++;
+		}
+	}
+	return NULL;
+}
 
+bool ListaOrdenable::moveUpLeft(Nodo<Ficha>* nodo, int times, Nodo<Ficha>* left) {
+	Ficha* ficha = nodo->getElemento();
+	if(left){
+		if(times == 0) {
+			//swapNodo()
+		}
+		switch(ficha->getColor()){
+			case 0: {
+				if(ficha->getCorona()){
+
+				}
+
+				else{
+					if(left->getElemento()->getColor() == 1){
+
+					}
+				}
+			}
+		}
+
+	}
 }
 
 

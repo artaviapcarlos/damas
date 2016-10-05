@@ -1,4 +1,4 @@
-/*
+
 #include "Tablero.h"
 
 
@@ -392,13 +392,4 @@ void Tablero::finalizaPartida() {
         aux = aux->getSiguiente();
     }
 }
-	
-	
 
-
-
-
-	
-	
-	
-	*/

@@ -9,7 +9,7 @@ template <class T>
 class LinkedList
 {
 protected:
-	Nodo<T>*root;
+	Nodo<T>* root;
 	Nodo<T>* actual;
 	Nodo<T>* last;
 public:
@@ -144,6 +144,7 @@ if(!esVacia()){
 	 
 	 }
  }
+
 
 
 

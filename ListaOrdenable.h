@@ -9,11 +9,12 @@ public:
 	Ficha* locate(int);
 	void marcar(int);
 	void addOrdenado(Ficha *e);
+	virtual Nodo<Ficha>* getNode(int);
 	void swapNodo(int,Ficha*);
-	void moveUpLeft(int);
-	void moveUpRight(int);
-	void moveDownLeft(int);
-	void moveUDownRight(int);
+	bool moveUpLeft(Nodo<Ficha>*,int,Nodo<Ficha>*);
+	bool moveUpRight(Nodo<Ficha>*,int,Nodo<Ficha>*);
+	bool moveDownLeft(Nodo<Ficha>*,int,Nodo<Ficha>*);
+	bool moveUDownRight(Nodo<Ficha>*,int,Nodo<Ficha>*);
 	Ficha* operator [] (const int index);
 };
 
