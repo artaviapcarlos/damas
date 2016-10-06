@@ -26,14 +26,14 @@ public:
 	void finalizaPartida();
 
 private:
-	LinkedList<ListaOrdenable>* vertical;
-	LinkedList<ListaOrdenable>* horizontal;
-	LinkedList<ListaOrdenable>* diagonal;
-	 Integer** B;
-	 Integer** I;
-	 Integer** N;
-	 Integer** G;
-	 Integer** O;
+	ListaOrdenable* A;
+	ListaOrdenable* B;
+	ListaOrdenable* C;
+	ListaOrdenable* D;
+	ListaOrdenable* E;
+	ListaOrdenable* F;
+	ListaOrdenable* G;
+	ListaOrdenable* H;
 
 };
 

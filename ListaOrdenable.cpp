@@ -62,18 +62,18 @@ void ListaOrdenable::addOrdenado(Ficha* e){
 	}
 }
 
-void ListaOrdenable::swapNodo(int index, Ficha* ficha) {
-	int color = locate(index)->getColor();
-	bool corona = locate(index)->getCorona();
-	int num = locate(index)->getNum();
+void ListaOrdenable::swapNodo(Nodo<Ficha>* node, Nodo<Ficha>* ficha) {
+	int color = node->getElemento()->getColor();
+	bool corona = node->getElemento()->getCorona();
+	int num = node->getElemento()->getNum();
 
-	locate(index)->setColor(ficha->getColor());
-	locate(index)->setCorona(ficha->getCorona());
-	locate(index)->setNum(ficha->getNum());
+	node->getElemento()->setColor(ficha->getElemento()->getColor());
+	node->getElemento()->setCorona(ficha->getElemento()->getCorona());
+	node->getElemento()->setNum(ficha->getElemento()->getNum());
 
-	ficha->setColor(color);
-	ficha->setCorona(corona);
-	ficha->setNum(num);
+	ficha->getElemento()->setColor(color);
+	ficha->getElemento()->setCorona(corona);
+	ficha->getElemento()->setNum(num);
 }
 
 Nodo<Ficha>* ListaOrdenable::getNode(int index) {
@@ -91,9 +91,30 @@ Nodo<Ficha>* ListaOrdenable::getNode(int index) {
 	return NULL;
 }
 
-bool ListaOrdenable::moveUpLeft(Nodo<Ficha>* nodo, int times, Nodo<Ficha>* left) {
+bool ListaOrdenable::comerFicha(Ficha *ficha) {
+	if(ficha->getColor()==0){
+		ficha->setColor(2);
+		fichasComidasBlancas++;
+		return true;
+	}
+
+	if(ficha->getColor()==1){
+		ficha->setColor(2);
+		fichasComidasNegras++;
+		return true;
+	}
+
+	return false;
+
+}
+
+bool ListaOrdenable::moveUpLeft(Nodo<Ficha>* nodo, Nodo<Ficha>* next, int times, bool ate) {
 	Ficha* ficha = nodo->getElemento();
-	if(left){
+	Nodo<Ficha>* right = next->getUpRight();
+	int rightColor = 2;
+	if(right)
+		rightColor = right->getElemento()->getColor();
+	if(next){
 		if(times == 0) {
 			//swapNodo()
 		}
@@ -102,15 +123,30 @@ bool ListaOrdenable::moveUpLeft(Nodo<Ficha>* nodo, int times, Nodo<Ficha>* left)
 				if(ficha->getCorona()){
 
 				}
-
 				else{
-					if(left->getElemento()->getColor() == 1){
-
+					if(next->getElemento()->getColor() == 1 && rightColor==2){ //PROBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR
+						if(next->getUpLeft()){
+							swapNodo(nodo,next->getUpLeft());
+							comerFicha(next->getElemento());
+							ate = true;
+							return moveUpLeft(next->getUpLeft(),next->getUpLeft()->getUpLeft(),1,ate);
+						}
+					}
+					if(next->getElemento()->getColor() == 0)
+						return false;
+					if(next->getElemento()->getColor() == 2 && ate)
+						return false;
+					else{
+						swapNodo(nodo,next);
+						return true;
 					}
 				}
 			}
 		}
-
+	}
+	else{
+		if(!next && !right)
+			ficha->coronar();
 	}
 }
 

@@ -1,3 +1,4 @@
+/*
 
 #include "Tablero.h"
 
@@ -393,3 +394,4 @@ void Tablero::finalizaPartida() {
     }
 }
 
+*/

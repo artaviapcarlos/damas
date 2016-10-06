@@ -9,12 +9,15 @@ public:
 	Ficha* locate(int);
 	void marcar(int);
 	void addOrdenado(Ficha *e);
-	virtual Nodo<Ficha>* getNode(int);
-	void swapNodo(int,Ficha*);
-	bool moveUpLeft(Nodo<Ficha>*,int,Nodo<Ficha>*);
-	bool moveUpRight(Nodo<Ficha>*,int,Nodo<Ficha>*);
-	bool moveDownLeft(Nodo<Ficha>*,int,Nodo<Ficha>*);
-	bool moveUDownRight(Nodo<Ficha>*,int,Nodo<Ficha>*);
+	Nodo<Ficha>* getNode(int);
+	bool comerFicha(Ficha*);
+	void swapNodo(Nodo<Ficha>*,Nodo<Ficha>*);
+	bool moveUpLeft(Nodo<Ficha>*,Nodo<Ficha>*,int,bool);
+	bool moveUpRight(Nodo<Ficha>*,Nodo<Ficha>*,int,bool);
+	bool moveDownLeft(Nodo<Ficha>*,Nodo<Ficha>*,int,bool);
+	bool moveUDownRight(Nodo<Ficha>*,Nodo<Ficha>*,int,bool);
 	Ficha* operator [] (const int index);
+	int fichasComidasBlancas = 0;
+	int fichasComidasNegras = 0;
 };
 

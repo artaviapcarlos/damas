@@ -10,6 +10,14 @@ int main(){
 
     ListaOrdenable* listaBlancas = new ListaOrdenable();
     ListaOrdenable* listaNegras = new ListaOrdenable();
+    ListaOrdenable* A = new ListaOrdenable();
+    ListaOrdenable* B = new ListaOrdenable();
+    ListaOrdenable* C = new ListaOrdenable();
+    ListaOrdenable* D = new ListaOrdenable();
+    ListaOrdenable* E = new ListaOrdenable();
+    ListaOrdenable* F = new ListaOrdenable();
+    ListaOrdenable* G = new ListaOrdenable();
+    ListaOrdenable* H = new ListaOrdenable();
 
     for(int i=0; i < 4; i++)
         listaBlancas->addLast(new Ficha(0,i));
