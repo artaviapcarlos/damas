@@ -4,7 +4,9 @@
 
 #include "Ficha.h"
 
-Ficha::Ficha(int color, int num) : color(color), corona(false), num(num) { }
+Ficha::Ficha(int color) : color(color), corona(false){
+    resetColorOpos();
+}
 
 int Ficha::getColor() const {
     return color;
@@ -12,6 +14,27 @@ int Ficha::getColor() const {
 
 void Ficha::setColor(int color) {
     this->color = color;
+    resetColorOpos();
+}
+
+int Ficha::getColorOpos() const {
+    return colorOpos;
+}
+
+void Ficha::resetColorOpos(){
+    switch(color){
+        case 0:
+            colorOpos = 1;
+            break;
+
+        case 1:
+            colorOpos = 0;
+            break;
+
+        default:
+            colorOpos = 2;
+            break;
+    }
 }
 
 bool Ficha::getCorona() const {
@@ -26,23 +49,15 @@ void Ficha::coronar() {
     corona = true;
 }
 
-int Ficha::getNum() {
-    return num;
-}
-
-void Ficha::setNum(int num) {
-    this->num = num;
-}
-
 string Ficha::toString() {
     stringstream s;
 
     if(color == 2)
-        s << "X" << endl;
+        s << "X";
     if(color == 1)
-        s << "N" << num;
+        s << "N";
     if(color == 0)
-        s << "B" << num;
+        s << "B";
 
     if(corona)
         s << " (c)";

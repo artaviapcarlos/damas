@@ -2,19 +2,21 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Tablero.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LinkedList.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Integer.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Ficha.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/README.md" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Integer.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ListaOrdenable.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Nodo.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tablero.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/README.md" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Casilla.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tablero.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Integer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ficha.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Casilla.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Ficha.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ListaOrdenable.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ListaOrdenable.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Nodo.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tablero.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LinkedList.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

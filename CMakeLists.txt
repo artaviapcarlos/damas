@@ -12,6 +12,6 @@ set(SOURCE_FILES
     Nodo.h
     Tablero.cpp
     Tablero.h
-    README.md Ficha.cpp Ficha.h main.cpp)
+    README.md Ficha.cpp Ficha.h main.cpp Casilla.cpp Casilla.h)
 
 add_executable(damas ${SOURCE_FILES})

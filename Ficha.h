@@ -12,19 +12,19 @@ using namespace std;
 class Ficha {
 private:
     int color;
+    int colorOpos;
     bool corona;
-    int num;
 
 public:
 
-    Ficha(int,int);
+    Ficha(int);
     int getColor() const;
     void setColor(int);
+    int getColorOpos() const;
+    void resetColorOpos();
     bool getCorona() const;
     void setCorona(bool);
     void coronar();
-    int getNum();
-    void setNum(int);
     string toString();
 };
 
