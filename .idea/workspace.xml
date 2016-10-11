@@ -12,9 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa2cf9f-1a4f-4e4e-946c-a201d7210408" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Casilla.cpp" afterPath="$PROJECT_DIR$/Casilla.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Casilla.h" afterPath="$PROJECT_DIR$/Casilla.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jugador.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jugador.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/damas.iml" afterPath="$PROJECT_DIR$/.idea/damas.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LinkedList.h" afterPath="$PROJECT_DIR$/LinkedList.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tablero.cpp" afterPath="$PROJECT_DIR$/Tablero.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tablero.h" afterPath="$PROJECT_DIR$/Tablero.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="damas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,6 +50,7 @@
                   <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
                   <folding>
                     <element signature="e#91#109#0" expanded="true" />
+                    <marker date="1476146048921" expanded="true" signature="164:1009" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -52,8 +59,8 @@
           <file leaf-file-name="Casilla.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Casilla.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="187" column="1" selection-start-line="187" selection-start-column="1" selection-end-line="187" selection-end-column="1" />
+                <state relative-caret-position="1204">
+                  <caret line="145" column="13" selection-start-line="145" selection-start-column="13" selection-end-line="145" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -62,18 +69,18 @@
           <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="726">
-                  <caret line="133" column="39" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
+                <state relative-caret-position="180">
+                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Tablero.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Tablero.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Tablero.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+                <state relative-caret-position="504">
+                  <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
                   <folding>
                     <element signature="e#1#27#0" expanded="true" />
                   </folding>
@@ -81,11 +88,33 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Tablero.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Tablero.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tablero.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="54">
-                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <state relative-caret-position="306">
+                  <caret line="17" column="63" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="63" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Jugador.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Jugador.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#90#108#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Jugador.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Jugador.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="354">
+                  <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -98,11 +127,9 @@
           <file leaf-file-name="ListaOrdenable.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ListaOrdenable.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
+                <state relative-caret-position="234">
                   <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#0#23#0" expanded="true" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -112,7 +139,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="276">
                   <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
-                  <folding />
+                  <folding>
+                    <marker date="1476141950065" expanded="true" signature="91:94" placeholder="{...}" />
+                    <marker date="1476141950065" expanded="true" signature="135:373" placeholder="{...}" />
+                    <marker date="1476141950065" expanded="true" signature="1746:1775" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -120,8 +151,8 @@
           <file leaf-file-name="LinkedList.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LinkedList.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="287">
-                  <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+                <state relative-caret-position="288">
+                  <caret line="120" column="19" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -179,14 +210,16 @@
         <option value="$PROJECT_DIR$/Ficha.h" />
         <option value="$PROJECT_DIR$/Nodo.h" />
         <option value="$PROJECT_DIR$/Ficha.cpp" />
-        <option value="$PROJECT_DIR$/LinkedList.h" />
         <option value="$PROJECT_DIR$/ListaOrdenable.h" />
         <option value="$PROJECT_DIR$/ListaOrdenable.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Tablero.cpp" />
         <option value="$PROJECT_DIR$/Casilla.h" />
         <option value="$PROJECT_DIR$/Casilla.cpp" />
         <option value="$PROJECT_DIR$/Tablero.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/LinkedList.h" />
+        <option value="$PROJECT_DIR$/Tablero.cpp" />
+        <option value="$PROJECT_DIR$/Jugador.h" />
+        <option value="$PROJECT_DIR$/Jugador.cpp" />
       </list>
     </option>
   </component>
@@ -431,6 +464,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",INHERITORS_AND_CATEGORIES" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -484,33 +520,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>126</line>
-          <option name="timeStamp" value="8" />
+          <line>10</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Ficha.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nodo.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#895#904#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Integer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -611,7 +629,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
+          <folding>
+            <marker date="1476141950065" expanded="true" signature="91:94" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="135:373" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="1746:1775" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -642,7 +664,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
+          <folding>
+            <marker date="1476141950065" expanded="true" signature="91:94" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="135:373" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="1746:1775" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -673,7 +699,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
+          <folding>
+            <marker date="1476141950065" expanded="true" signature="91:94" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="135:373" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="1746:1775" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -704,7 +734,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
+          <folding>
+            <marker date="1476141950065" expanded="true" signature="91:94" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="135:373" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="1746:1775" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -735,7 +769,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
+          <folding>
+            <marker date="1476141950065" expanded="true" signature="91:94" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="135:373" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="1746:1775" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -816,14 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ficha.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ficha.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
@@ -836,49 +866,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ListaOrdenable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1476141950065" expanded="true" signature="91:94" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="135:373" placeholder="{...}" />
+            <marker date="1476141950065" expanded="true" signature="1746:1775" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedList.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tablero.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="133" column="39" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Casilla.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="187" column="1" selection-start-line="187" selection-start-column="1" selection-end-line="187" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,17 +880,84 @@
           <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
           <folding>
             <element signature="e#91#109#0" expanded="true" />
+            <marker date="1476146048921" expanded="true" signature="164:1009" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ficha.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Casilla.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1204">
+          <caret line="145" column="13" selection-start-line="145" selection-start-column="13" selection-end-line="145" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tablero.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        <state relative-caret-position="504">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
             <element signature="e#1#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListaOrdenable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="120" column="19" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jugador.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#90#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jugador.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tablero.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>

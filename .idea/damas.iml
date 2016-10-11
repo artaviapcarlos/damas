@@ -10,8 +10,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Ficha.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Casilla.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Ficha.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Jugador.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ListaOrdenable.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ListaOrdenable.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Jugador.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Nodo.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
