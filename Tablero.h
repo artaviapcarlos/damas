@@ -13,27 +13,12 @@ public:
 	string toString();
 	void initTablero();
 	void initNumeros();
-	void static knuthShuffle(Integer** orgArray);
-	void marcarNumero(int, int);
-	bool revisarlleno();
-	bool revisarvert();
-	bool revisarhori();
-	bool revisardiago();
-	bool revisarc();
-	bool revisarx();
-	bool revisaru();
-	bool revisaro();
-	void finalizaPartida();
+	bool revisarGanador();
+	bool finPartida();
 
 private:
-	ListaOrdenable* A;
-	ListaOrdenable* B;
-	ListaOrdenable* C;
-	ListaOrdenable* D;
-	ListaOrdenable* E;
-	ListaOrdenable* F;
-	ListaOrdenable* G;
-	ListaOrdenable* H;
-
+	LinkedList<ListaOrdenable>* listas;
+	int eatenW;
+	int eatenB;
 };
 

@@ -55,16 +55,16 @@ void Casilla::setUpLeft(Casilla *upLeft) {
     this->upLeft = upLeft;
 }
 
-void Casilla::setUpRight(Casilla *upLeft) {
-    this->upLeft = upLeft;
+void Casilla::setUpRight(Casilla *upRight) {
+    this->upRight = upRight;
 }
 
-void Casilla::setDownLeft(Casilla *upLeft) {
-    this->upLeft = upLeft;
+void Casilla::setDownLeft(Casilla *downLeft) {
+    this->downLeft = downLeft;
 }
 
-void Casilla::setDownRight(Casilla *upLeft) {
-    this->upLeft = upLeft;
+void Casilla::setDownRight(Casilla *downRight) {
+    this->downRight = downRight;
 }
 
 void Casilla::coronar() {
@@ -186,7 +186,7 @@ Casilla* Casilla::moveDownRight() {
 string Casilla::toString() {
     stringstream s;
 
-    s << ficha->toString() << "|";
+    s << ficha->toString() << num ;
 
     return s.str();
 }

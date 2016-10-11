@@ -69,37 +69,35 @@ Casilla *ListaOrdenable::operator[](const int index) {
 
 string ListaOrdenable::toString() {
     stringstream s;
-    /*Nodo<Casilla> *actual = root;
+    Nodo<Casilla> *actual = root;
     s << "|";
     while (actual) {
         Casilla *obj = actual->getElemento();
-        s << obj->toString();
+        s << obj->toString() << "|";
         actual = actual->getSiguiente();
     }
-    s << endl;*/
+    s << endl;
 
-    s << toStringCasilla();
+    //s << toStringCasilla();
     return s.str();
 }
 
 string ListaOrdenable::toStringCasilla(){
     stringstream s;
     Nodo<Casilla> *actual = root;
-    s << "|";
     while (actual) {
         Casilla *obj = actual->getElemento();
         if(obj->getUpLeft())
-            s << "Casilla upLeft: " << obj->getUpLeft()->getFicha()->toString();
+            s << obj->toString() << "| Casilla upLeft: " << obj->getUpLeft()->toString() << "->";
         if(obj->getUpRight())
-            s << "Casilla upRight: " << obj->getUpRight()->getFicha()->toString();
+            s << obj->toString() << "| Casilla upRight: " << obj->getUpRight()->toString() << "->";
         if(obj->getDownLeft())
-            s << "Casilla downLeft: " << obj->getDownLeft()->getFicha()->toString();
+            s << obj->toString() << "| Casilla downLeft: " << obj->getDownLeft()->toString() << "->";
         if(obj->getDownRight())
-            s << "Casilla downRight: " << obj->getDownRight()->getFicha()->toString();
+            s << obj->toString() << "| Casilla downRight: " << obj->getDownRight()->toString() << "->";
         s << endl;
         actual = actual->getSiguiente();
     }
-    s << endl;
     return s.str();
 }
 
