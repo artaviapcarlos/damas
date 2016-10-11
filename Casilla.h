@@ -32,6 +32,7 @@ public:
     virtual Casilla* moveDownLeft();
     virtual Casilla* moveDownRight();
     virtual void coronar();
+    virtual bool hasMoves();
     virtual string toString();
 
 private:

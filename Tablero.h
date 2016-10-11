@@ -12,9 +12,12 @@ public:
 	~Tablero();
 	string toString();
 	void initTablero();
-	void initNumeros();
-	bool revisarGanador();
+	int revisarGanador();
 	bool finPartida();
+	int cantFichas(int);
+	bool tieneMovs(int);
+	bool moverFicha(int,int,int);
+	bool jugadorRetirado();
 
 private:
 	LinkedList<ListaOrdenable>* listas;

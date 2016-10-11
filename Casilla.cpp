@@ -183,6 +183,10 @@ Casilla* Casilla::moveDownRight() {
     return NULL;
 }
 
+bool Casilla::hasMoves() {
+    return (moveUpLeft()||moveUpRight()||moveDownLeft()||moveDownRight());
+}
+
 string Casilla::toString() {
     stringstream s;
 
